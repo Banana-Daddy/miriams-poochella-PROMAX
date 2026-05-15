@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Miriam's Poochella — Palm Springs Dog Grooming · Best in the Valley</title>
+<meta name="description" content="Award-winning Palm Springs dog grooming. Six-time Best Groomer in the Coachella Valley. Zurich-trained, by-appointment only. Spoil your pet.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Miriam's Poochella">
+<meta property="og:title" content="Miriam's Poochella — Palm Springs Dog Grooming · Best in the Valley">
+<meta property="og:description" content="Six-time Best Groomer in the Coachella Valley. Zurich-trained, by-appointment only.">
+<meta property="og:url" content="https://banana-daddy.github.io/miriams-poochella-PROMAX/">
+<meta property="og:image" content="https://banana-daddy.github.io/miriams-poochella-PROMAX/images/og.jpg">
+<meta property="og:image:secure_url" content="https://banana-daddy.github.io/miriams-poochella-PROMAX/images/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A Shag-style illustration of a fluffy white Maltese dog on a hot-pink chaise beside a pink kidney pool in front of a mid-century modern Palm Springs salon">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Miriam's Poochella — Palm Springs Dog Grooming">
+<meta name="twitter:description" content="Six-time Best Groomer in the Coachella Valley. Zurich-trained, by-appointment only.">
+<meta name="twitter:image" content="https://banana-daddy.github.io/miriams-poochella-PROMAX/images/og.jpg">
+<meta name="twitter:image:alt" content="Shag-style Maltese poolside in Palm Springs">
+
+<!-- Theme + favicon + canonical -->
+<meta name="theme-color" content="#FFE0EC">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" sizes="512x512" href="images/favicon-512.png">
+<link rel="canonical" href="https://banana-daddy.github.io/miriams-poochella-PROMAX/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin:wght@400;500;600;700&family=Bowlby+One+SC&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+:root {
+  --bone:    #F5EDE4;
+  --pink-3:  #FFE0EC;     /* powder pink — canvas */
+  --pink-2:  #FBB6CE;     /* bubblegum */
+  --pink:    #FF4D8C;     /* cabana pink — primary */
+  --pink-deep: #C9286A;
+  --teal:    #5BA3A3;     /* pool teal */
+  --teal-deep: #3D7A7A;
+  --mustard: #E8B946;     /* sun mustard */
+  --plum:    #3D1830;     /* plum ink — text/borders */
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--pink-3);
+  color: var(--plum);
+  font-family: 'Cabin', system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.55;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+img, svg { display: block; max-width: 100%; }
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+
+.display { font-family: 'Abril Fatface', Georgia, serif; letter-spacing: -0.01em; line-height: 0.95; }
+.bowlby { font-family: 'Bowlby One SC', Impact, sans-serif; }
+.upper { text-transform: uppercase; letter-spacing: 0.18em; }
+.mono-label { font-family: 'Cabin', monospace; text-transform: uppercase; letter-spacing: 0.22em; font-size: 0.72rem; font-weight: 600; }
+
+/* Atomic starburst (SVG mask) */
+.starburst {
+  display: inline-block;
+  width: 1em; height: 1em;
+  background: currentColor;
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 0v9m0 6v9m-12-12h9m6 0h9m-18.36-8.49 6.36 6.36m4.24 4.24 6.36 6.36m-16.96 0 6.36-6.36m4.24-4.24 6.36-6.36'/><circle cx='12' cy='12' r='2'/></svg>") center/contain no-repeat;
+  mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 0v9m0 6v9m-12-12h9m6 0h9m-18.36-8.49 6.36 6.36m4.24 4.24 6.36 6.36m-16.96 0 6.36-6.36m4.24-4.24 6.36-6.36'/><circle cx='12' cy='12' r='2'/></svg>") center/contain no-repeat;
+}
+
+/* ============================================
+   NAV — floating pill
+   ============================================ */
+.nav {
+  position: fixed; top: 12px; left: 12px; right: 12px; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 8px 14px;
+  background: var(--plum);
+  color: var(--pink-3);
+  border-radius: 9999px;
+  border: 2px solid var(--plum);
+  box-shadow: 4px 4px 0 var(--pink);
+  transition: box-shadow 0.3s ease;
+}
+.nav.scrolled { box-shadow: 4px 4px 0 var(--mustard); }
+.nav-brand {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: 'Abril Fatface', serif;
+  font-size: 1.05rem;
+  letter-spacing: 0;
+}
+.nav-links {
+  display: none;
+  gap: 24px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+}
+.nav-links a { transition: color 0.2s ease; }
+.nav-links a:hover { color: var(--mustard); }
+.nav-cta {
+  background: var(--pink);
+  color: var(--plum);
+  padding: 8px 14px;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: transform 0.2s ease;
+}
+.nav-cta:hover { background: var(--mustard); transform: translateY(-1px); }
+@media (min-width: 768px) {
+  .nav { top: 16px; left: 16px; right: 16px; padding: 10px 18px; }
+  .nav-links { display: inline-flex; }
+  .nav-brand { font-size: 1.2rem; }
+}
+
+/* ============================================
+   HERO
+   ============================================ */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 92px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  background: var(--pink-3);
+}
+.hero-wrap {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.hero-frame {
+  position: relative;
+  border: 3px solid var(--plum);
+  background: var(--pink-3);
+  box-shadow: 8px 8px 0 var(--pink);
+  overflow: hidden;
+}
+.hero-image-wrap {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--pink-2);
+}
+.hero-image-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-eyebrow {
+  display: inline-block;
+  background: var(--plum);
+  color: var(--pink-3);
+  padding: 6px 12px;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.hero-body {
+  padding: 28px 22px 32px;
+  text-align: center;
+}
+.hero-title {
+  font-family: 'Abril Fatface', serif;
+  font-size: clamp(2.1rem, 10vw, 6.5rem);
+  line-height: 0.92;
+  color: var(--plum);
+  margin: 16px 0 8px;
+  text-shadow:
+    3px 3px 0 var(--pink),
+    6px 6px 0 rgba(61,24,48,0.12);
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+.hero-title-script {
+  font-family: 'Abril Fatface', serif;
+  font-style: italic;
+  font-size: clamp(1.2rem, 4.5vw, 2.4rem);
+  color: var(--teal);
+  display: block;
+  margin-bottom: -8px;
+  text-shadow: 2px 2px 0 var(--pink-3);
+}
+.hero-tag {
+  font-size: 0.95rem;
+  color: var(--plum);
+  max-width: 38ch;
+  margin: 16px auto 24px;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+.hero-ctas {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn-primary, .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 22px;
+  border: 2.5px solid var(--plum);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.btn-primary {
+  background: var(--pink);
+  color: var(--plum);
+  box-shadow: 4px 4px 0 var(--plum);
+}
+.btn-primary:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--plum); }
+.btn-secondary {
+  background: transparent;
+  color: var(--plum);
+  box-shadow: 4px 4px 0 var(--teal);
+}
+.btn-secondary:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--teal); }
+.hero-floats {
+  position: absolute;
+  pointer-events: none;
+  color: var(--mustard);
+}
+@media (min-width: 768px) {
+  .hero-body { padding: 36px 32px 44px; }
+  .hero-tag { font-size: 1.1rem; }
+}
+
+/* ============================================
+   AWARDS STRIP
+   ============================================ */
+.awards {
+  position: relative;
+  background: var(--plum);
+  color: var(--pink-3);
+  padding: 56px 16px;
+  overflow: hidden;
+}
+.awards-wrap { max-width: 1300px; margin: 0 auto; }
+.awards-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--mustard);
+  margin-bottom: 20px;
+}
+.awards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+.award-stat {
+  border-top: 2px solid rgba(255,224,236,0.18);
+  padding-top: 20px;
+}
+.award-num {
+  font-family: 'Abril Fatface', serif;
+  font-size: clamp(3.2rem, 12vw, 5.5rem);
+  color: var(--mustard);
+  line-height: 0.9;
+  text-shadow: 3px 3px 0 var(--pink);
+}
+.award-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-top: 8px;
+  color: var(--pink-3);
+}
+.award-sub { color: rgba(255,224,236,0.65); font-size: 0.85rem; margin-top: 4px; letter-spacing: 0.02em; font-weight: 400; text-transform: none; line-height: 1.45; }
+@media (min-width: 768px) {
+  .awards { padding: 80px 32px; }
+  .awards-grid { grid-template-columns: repeat(4, 1fr); gap: 24px; }
+}
+
+/* ============================================
+   ABOUT MIRIAM
+   ============================================ */
+.about {
+  position: relative;
+  background: var(--bone);
+  padding: 80px 16px;
+}
+.about-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  align-items: center;
+}
+.about-portrait {
+  border: 3px solid var(--plum);
+  box-shadow: 8px 8px 0 var(--mustard);
+  background: var(--pink-2);
+  overflow: hidden;
+}
+.about-portrait img { width: 100%; height: auto; display: block; }
+.about-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--pink-deep);
+}
+.about-title {
+  font-family: 'Abril Fatface', serif;
+  font-size: clamp(2.4rem, 7vw, 4.2rem);
+  line-height: 0.95;
+  margin: 14px 0 18px;
+  color: var(--plum);
+}
+.about-title em { font-style: italic; color: var(--pink); }
+.about-body {
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: var(--plum);
+}
+.about-body p + p { margin-top: 14px; }
+.about-quote {
+  margin-top: 24px;
+  padding: 18px 22px;
+  border-left: 4px solid var(--pink);
+  background: rgba(255,77,140,0.06);
+  font-family: 'Abril Fatface', serif;
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--pink-deep);
+}
+@media (min-width: 900px) {
+  .about-wrap { grid-template-columns: 1fr 1fr; gap: 60px; }
+}
+
+/* ============================================
+   SERVICES
+   ============================================ */
+.services {
+  background: var(--pink-3);
+  padding: 80px 16px;
+}
+.services-wrap { max-width: 1300px; margin: 0 auto; }
+.section-head {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--pink-deep);
+}
+.section-title {
+  font-family: 'Abril Fatface', serif;
+  font-size: clamp(2.4rem, 7vw, 4rem);
+  line-height: 0.95;
+  margin: 14px 0 12px;
+  color: var(--plum);
+}
+.section-sub {
+  max-width: 50ch;
+  margin: 0 auto;
+  color: var(--plum);
+  opacity: 0.8;
+  font-size: 1rem;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+.service-card {
+  position: relative;
+  border: 3px solid var(--plum);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.service-card:hover {
+  transform: translate(-3px, -3px);
+}
+.service-card.c1 { background: var(--pink-2); box-shadow: 6px 6px 0 var(--plum); }
+.service-card.c1:hover { box-shadow: 9px 9px 0 var(--plum); }
+.service-card.c2 { background: var(--mustard); box-shadow: 6px 6px 0 var(--plum); }
+.service-card.c2:hover { box-shadow: 9px 9px 0 var(--plum); }
+.service-card.c3 { background: var(--teal); color: var(--pink-3); box-shadow: 6px 6px 0 var(--plum); }
+.service-card.c3:hover { box-shadow: 9px 9px 0 var(--plum); }
+.service-img {
+  aspect-ratio: 1 / 1;
+  background: var(--pink-3);
+  border-bottom: 3px solid var(--plum);
+}
+.service-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.service-body {
+  padding: 22px 22px 24px;
+}
+.service-num {
+  font-family: 'Abril Fatface', serif;
+  font-size: 1.6rem;
+  opacity: 0.6;
+}
+.service-name {
+  font-family: 'Abril Fatface', serif;
+  font-size: 1.9rem;
+  line-height: 1.05;
+  margin: 4px 0 10px;
+}
+.service-card.c3 .service-name { color: var(--pink-3); }
+.service-desc {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  opacity: 0.92;
+}
+@media (min-width: 768px) {
+  .services-grid { grid-template-columns: repeat(3, 1fr); gap: 28px; }
+}
+
+/* ============================================
+   VIP BANNER + GALLERY
+   ============================================ */
+.vip-banner {
+  position: relative;
+  background: var(--plum);
+  overflow: hidden;
+  border-top: 3px solid var(--plum);
+  border-bottom: 3px solid var(--plum);
+}
+.vip-banner img { width: 100%; height: auto; display: block; }
+.gallery {
+  background: var(--bone);
+  padding: 80px 16px 96px;
+}
+.gallery-wrap { max-width: 1300px; margin: 0 auto; }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.gallery-grid a {
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border: 2px solid var(--plum);
+  background: var(--pink-2);
+  transition: transform 0.25s ease;
+}
+.gallery-grid a:hover { transform: translateY(-3px); }
+.gallery-grid img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (min-width: 768px) {
+  .gallery-grid { grid-template-columns: repeat(4, 1fr); gap: 14px; }
+}
+
+/* ============================================
+   HOUSE RULE — PATTERN BG
+   ============================================ */
+.house-rule {
+  position: relative;
+  background-color: var(--pink-3);
+  background-image: url('images/pattern-atomic.jpg');
+  background-size: 480px 480px;
+  background-repeat: repeat;
+  padding: 100px 16px 110px;
+  text-align: center;
+  border-top: 3px solid var(--plum);
+  border-bottom: 3px solid var(--plum);
+}
+.house-rule::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: rgba(255,224,236,0.78);
+}
+.house-rule-inner {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.house-rule-label {
+  display: inline-block;
+  background: var(--plum);
+  color: var(--mustard);
+  padding: 6px 14px;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.house-rule-quote {
+  font-family: 'Abril Fatface', serif;
+  font-size: clamp(2.2rem, 7vw, 4.8rem);
+  line-height: 0.98;
+  color: var(--plum);
+  text-shadow: 3px 3px 0 var(--pink);
+}
+.house-rule-quote em { font-style: italic; color: var(--pink-deep); }
+.house-rule-cred {
+  margin-top: 22px;
+  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--plum);
+  opacity: 0.75;
+  font-weight: 600;
+}
+
+/* ============================================
+   TESTIMONIALS
+   ============================================ */
+.testimonials {
+  background: var(--pink-3);
+  padding: 80px 16px 96px;
+}
+.testimonials-wrap { max-width: 1300px; margin: 0 auto; }
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+  margin-top: 40px;
+}
+.testimonial {
+  background: #fff;
+  border: 3px solid var(--plum);
+  box-shadow: 6px 6px 0 var(--teal);
+  padding: 26px 24px 22px;
+  position: relative;
+  transition: box-shadow 0.25s ease;
+}
+.testimonial:nth-child(2) { box-shadow: 6px 6px 0 var(--mustard); }
+.testimonial:nth-child(3) { box-shadow: 6px 6px 0 var(--pink); }
+.testimonial:nth-child(4) { box-shadow: 6px 6px 0 var(--teal); }
+.testimonial:hover { box-shadow: 9px 9px 0 var(--teal); }
+.testimonial:nth-child(2):hover { box-shadow: 9px 9px 0 var(--mustard); }
+.testimonial:nth-child(3):hover { box-shadow: 9px 9px 0 var(--pink); }
+.testimonial:nth-child(4):hover { box-shadow: 9px 9px 0 var(--teal); }
+.testimonial-quote {
+  font-family: 'Abril Fatface', serif;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  color: var(--plum);
+  margin-bottom: 16px;
+}
+.testimonial-cred {
+  border-top: 2px solid var(--plum);
+  padding-top: 12px;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--pink-deep);
+}
+.testimonial-stars {
+  color: var(--mustard);
+  letter-spacing: 0.08em;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+@media (min-width: 768px) {
+  .testimonials-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; }
+}
+@media (min-width: 1100px) {
+  .testimonials-grid { grid-template-columns: repeat(4, 1fr); gap: 24px; }
+}
+
+/* ============================================
+   VISIT — exterior banner + contact
+   ============================================ */
+.visit-banner {
+  position: relative;
+  background: var(--plum);
+  overflow: hidden;
+  border-top: 3px solid var(--plum);
+  border-bottom: 3px solid var(--plum);
+}
+.visit-banner img { width: 100%; height: auto; display: block; }
+.visit {
+  background: var(--plum);
+  color: var(--pink-3);
+  padding: 80px 16px 100px;
+}
+.visit-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+.visit-card {
+  border: 2px solid rgba(255,224,236,0.2);
+  padding: 28px 24px;
+}
+.visit-card-label {
+  font-family: 'Abril Fatface', serif;
+  font-size: 1.6rem;
+  color: var(--mustard);
+  margin-bottom: 4px;
+}
+.visit-card-value {
+  font-size: 1.02rem;
+  line-height: 1.5;
+  color: var(--pink-3);
+}
+.visit-card a { color: var(--pink-2); border-bottom: 1px solid rgba(251,182,206,0.4); transition: color 0.2s ease; }
+.visit-card a:hover { color: var(--pink); }
+.visit-cta-wrap {
+  margin-top: 28px;
+}
+.visit-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--pink);
+  color: var(--plum);
+  padding: 18px 26px;
+  border: 3px solid var(--pink-3);
+  font-family: 'Abril Fatface', serif;
+  font-size: 1.4rem;
+  letter-spacing: 0;
+  box-shadow: 6px 6px 0 var(--mustard);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.visit-cta:hover { transform: translate(-3px, -3px); box-shadow: 9px 9px 0 var(--mustard); }
+@media (min-width: 900px) {
+  .visit-wrap { grid-template-columns: 1.1fr 1fr; gap: 60px; }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* Marquee for awards eyebrow */
+.marquee {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  white-space: nowrap;
+}
+
+/* Floating starburst decorations */
+.deco {
+  position: absolute;
+  pointer-events: none;
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="#" class="nav-brand">
+    <span class="starburst" style="width:18px;height:18px;color:var(--mustard);"></span>
+    Miriam's Poochella
+  </a>
+  <div class="nav-links" role="navigation">
+    <a href="#about">Miriam</a>
+    <a href="#services">Services</a>
+    <a href="#vip">VIPs</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#visit">Visit</a>
+  </div>
+  <a href="tel:+17608326913" class="nav-cta">Call · 760-832-6913</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-wrap">
+    <div class="hero-frame reveal in">
+      <div class="hero-image-wrap">
+        <img src="images/hero.jpg" alt="Shag-style illustration of a fluffy white Maltese on a hot-pink chaise beside a pink kidney pool in front of a mid-century modern Palm Springs house" loading="eager">
+      </div>
+      <div class="hero-body">
+        <span class="hero-eyebrow">Palm Springs · Est. 2016 · By Appointment</span>
+        <h1 class="hero-title">
+          <span class="hero-title-script">Miriam's</span>
+          POOCHELLA
+        </h1>
+        <p class="hero-tag">Six-time <strong>Best Groomer in the Coachella Valley</strong>. Zurich-trained. Spoil your pet like the VIP they already are.</p>
+        <div class="hero-ctas">
+          <a href="tel:+17608326913" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Book by Phone
+          </a>
+          <a href="#services" class="btn-secondary">See Services →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section class="awards">
+  <div class="awards-wrap">
+    <div class="awards-eyebrow reveal">
+      <span class="starburst" style="width:14px;height:14px;"></span>
+      The Most-Decorated Groomer in the Valley
+      <span class="starburst" style="width:14px;height:14px;"></span>
+    </div>
+    <div class="awards-grid">
+      <div class="award-stat reveal">
+        <div class="award-num">6×</div>
+        <div class="award-label">Best Groomer</div>
+        <div class="award-sub">Coachella Valley · titled six separate years</div>
+      </div>
+      <div class="award-stat reveal">
+        <div class="award-num">3</div>
+        <div class="award-label">Grooming Awards</div>
+        <div class="award-sub">Professional competition wins</div>
+      </div>
+      <div class="award-stat reveal">
+        <div class="award-num">14</div>
+        <div class="award-label">Years Grooming</div>
+        <div class="award-sub">Salon opened in Palm Springs · 2016</div>
+      </div>
+      <div class="award-stat reveal">
+        <div class="award-num">★4.9</div>
+        <div class="award-label">Reviews</div>
+        <div class="award-sub">Yelp, Google &amp; Facebook combined</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT MIRIAM -->
+<section class="about" id="about">
+  <div class="about-wrap">
+    <div class="about-portrait reveal">
+      <img src="images/miriam-portrait.jpg" alt="Shag-style illustration of Miriam — a chic 1960s woman with a tall beehive, cabana-pink cat-eye sunglasses, sun-mustard cocktail dress, and white opera gloves, holding a fluffy white Maltese in her lap" loading="lazy">
+    </div>
+    <div class="reveal">
+      <div class="about-eyebrow">
+        <span class="starburst" style="width:12px;height:12px;color:var(--pink-deep);"></span>
+        Meet Miriam
+      </div>
+      <h2 class="about-title">From Zurich. To <em>your dog's</em> hair.</h2>
+      <div class="about-body">
+        <p>Miriam Lenz arrived in the desert from Zurich, Switzerland — formally trained in fashion and interior design before she traded couture clients for the four-legged kind.</p>
+        <p>Fourteen years grooming. Six-time titled Best Groomer in the Coachella Valley. Three professional grooming awards. A by-appointment-only salon she opened on South Palm Canyon Drive in 2016 — bright, calm, no kennel waits, every pup treated like the VIP they are.</p>
+        <p>She's not just trimming. She's reading the dog. Watching for moles. Choosing the soap the face can take. Talking with you about the cut before she touches a single hair.</p>
+      </div>
+      <blockquote class="about-quote">"I make sure every pet leaves happier than they walked in — and most of them already came in pretty happy."</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="services-wrap">
+    <div class="section-head">
+      <div class="section-eyebrow reveal">
+        <span class="starburst" style="width:12px;height:12px;color:var(--pink-deep);"></span>
+        The Treatments
+        <span class="starburst" style="width:12px;height:12px;color:var(--pink-deep);"></span>
+      </div>
+      <h2 class="section-title reveal">Spa-day energy. Show-ring results.</h2>
+      <p class="section-sub reveal">All-natural shampoos and conditioners. State-of-the-art equipment. Pre-groom consult, post-service follow-up. Call to book any combination.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card c1 reveal">
+        <div class="service-img"><img src="images/service-hydrobath.jpg" alt="Shag-style illustration of a French Bulldog in a kidney-shaped grooming tub with pink bubbles and a chrome shower wand" loading="lazy"></div>
+        <div class="service-body">
+          <div class="service-num">— 001</div>
+          <div class="service-name">Hydro Bath</div>
+          <p class="service-desc">Our Hydro Surge system uses InjectAir technology to combine fresh water, shampoo, and oxygen — penetrating the coat down to the skin. Up to 70% less bathing time. Zero hand scrubbing.</p>
+        </div>
+      </article>
+
+      <article class="service-card c2 reveal">
+        <div class="service-img"><img src="images/service-facial.jpg" alt="Shag-style illustration of a Pomeranian relaxing with a blueberry facial mask on a hot-pink chaise" loading="lazy"></div>
+        <div class="service-body">
+          <div class="service-num">— 002</div>
+          <div class="service-name">Blueberry Facial</div>
+          <p class="service-desc">A tear-less, lick-safe face wash + color brightener — fresh blueberries, avocado, coconut oil, and aloe. Particularly nice for facial folds, tear-staining, and sensitive eyes.</p>
+        </div>
+      </article>
+
+      <article class="service-card c3 reveal">
+        <div class="service-img"><img src="images/service-fullgroom.jpg" alt="Shag-style illustration of a Shih Tzu on a chrome grooming table with scissors mid-snip" loading="lazy"></div>
+        <div class="service-body">
+          <div class="service-num">— 003</div>
+          <div class="service-name">Bath &amp; Full Groom</div>
+          <p class="service-desc">The full Poochella treatment. Hydro bath, blow-dry, breed-appropriate cut, sanitary trim, nails, ears, finished with a tiny pink ribbon (or whatever your dog can pull off). Show-grade.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VIP BANNER -->
+<section class="vip-banner" id="vip">
+  <img src="images/vip-banner.jpg" alt="Shag-style ultra-wide illustration of five different dogs reclining on five different mid-century lounge chairs at the edge of a pink pool with hot-pink palms and a butterfly-roof house" loading="lazy">
+</section>
+
+<!-- GALLERY (real dog photos) -->
+<section class="gallery">
+  <div class="gallery-wrap">
+    <div class="section-head">
+      <div class="section-eyebrow reveal">
+        <span class="starburst" style="width:12px;height:12px;color:var(--pink-deep);"></span>
+        The Real VIPs
+        <span class="starburst" style="width:12px;height:12px;color:var(--pink-deep);"></span>
+      </div>
+      <h2 class="section-title reveal">Here are some of our favorites.</h2>
+      <p class="section-sub reveal">Real graduates of the Poochella treatment. Bandanas, bows, and seasonal flair encouraged.</p>
+    </div>
+    <div class="gallery-grid">
+      <a href="https://images.squarespace-cdn.com/content/v1/5fcaa6ef05ce601914c3d132/1610850192587-GLMTE57XRS8IWM9AU745/IMG-2622.JPG?format=1500w" target="_blank" rel="noopener"><img src="https://images.squarespace-cdn.com/content/v1/5fcaa6ef05ce601914c3d132/1610850192587-GLMTE57XRS8IWM9AU745/IMG-2622.JPG?format=750w" alt="A real groomed dog from Miriam's Poochella gallery" loading="lazy"></a>
+      <a href="https://images.squarespace-cdn.com/content/v1/5fcaa6ef05ce601914c3d132/1610850203044-5TNXUP3QQS239WB9APVV/IMG-2723.JPG?format=1500w" target="_blank" rel="noopener"><img src="https://images.squarespace-cdn.com/content/v1/5fcaa6ef05ce601914c3d132/1610850203044-5TNXUP3QQS239WB9APVV/IMG-2723.JPG?format=750w" alt="A real groomed dog from Miriam's Poochella gallery" loading="lazy"></a>
+      <a href="https://images.squarespace-cdn.com/content/v1/5fcaa6ef05ce601914c3d132/1610850204349-AFADD7YFVK5FY7IDFZDX/IMG-2878.JPG?format=1500w" target="_blank" rel="noopener"><img src="https://images.squarespace-cdn.com/content/v1/5fcaa6ef05ce601914c3d132/1610850204349-AFADD7YFVK5FY7IDFZDX/IMG-2878.JPG?format=750w" alt="A real groomed dog from Miriam's Poochella gallery" loading="lazy"></a>
+      <a href="https://images.squarespace-cdn.com/content/v1/5fcaa6ef05ce601914c3d132/1610850210305-6TB284BRQP7ZQ8SXWJDU/IMG-3855.JPG?format=1500w" target="_blank" rel="noopener"><img src="https://images.squarespace-cdn.com/content/v1/5fcaa6ef05ce601914c3d132/1610850210305-6TB284BRQP7ZQ8SXWJDU/IMG-3855.JPG?format=750w" alt="A real groomed dog from Miriam's Poochella gallery" loading="lazy"></a>
+      <a href="https://images.squarespace-cdn.com/content/v1/5fcaa6ef05ce601914c3d132/1610850218589-WTSIVZWJ4UL9BIUI2563/IMG-3857.JPG?format=1500w" target="_blank" rel="noopener"><img src="https://images.squarespace-cdn.com/content/v1/5fcaa6ef05ce601914c3d132/1610850218589-WTSIVZWJ4UL9BIUI2563/IMG-3857.JPG?format=750w" alt="A real groomed dog from Miriam's Poochella gallery" loading="lazy"></a>
+      <a href="https://images.squarespace-cdn.com/content/v1/5fcaa6ef05ce601914c3d132/1610850230105-GQ1B2B2EIBYX9BAAQSHD/IMG-2732.JPG?format=1500w" target="_blank" rel="noopener"><img src="https://images.squarespace-cdn.com/content/v1/5fcaa6ef05ce601914c3d132/1610850230105-GQ1B2B2EIBYX9BAAQSHD/IMG-2732.JPG?format=750w" alt="A real groomed dog from Miriam's Poochella gallery" loading="lazy"></a>
+      <a href="https://images.squarespace-cdn.com/content/v1/5fcaa6ef05ce601914c3d132/1610850235074-77WJLMGAK8J4GQ3DWACL/IMG-3395.JPG?format=1500w" target="_blank" rel="noopener"><img src="https://images.squarespace-cdn.com/content/v1/5fcaa6ef05ce601914c3d132/1610850235074-77WJLMGAK8J4GQ3DWACL/IMG-3395.JPG?format=750w" alt="A real groomed dog from Miriam's Poochella gallery" loading="lazy"></a>
+      <a href="https://images.squarespace-cdn.com/content/v1/5fcaa6ef05ce601914c3d132/1610850238715-C6YOAR7PB1UEHIAYUFWC/IMG-2814.JPG?format=1500w" target="_blank" rel="noopener"><img src="https://images.squarespace-cdn.com/content/v1/5fcaa6ef05ce601914c3d132/1610850238715-C6YOAR7PB1UEHIAYUFWC/IMG-2814.JPG?format=750w" alt="A real groomed dog from Miriam's Poochella gallery" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<!-- HOUSE RULE -->
+<section class="house-rule">
+  <div class="house-rule-inner">
+    <div class="house-rule-label">The House Rule</div>
+    <h2 class="house-rule-quote">"By appointment. <em>Never</em> in a kennel."</h2>
+    <div class="house-rule-cred">Every dog gets a dedicated time slot · Walk in calm, leave fresh</div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="testimonials-wrap">
+    <div class="section-head">
+      <div class="section-eyebrow reveal">
+        <span class="starburst" style="width:12px;height:12px;color:var(--pink-deep);"></span>
+        Voices from the Waiting Room
+        <span class="starburst" style="width:12px;height:12px;color:var(--pink-deep);"></span>
+      </div>
+      <h2 class="section-title reveal">What everybody says.</h2>
+    </div>
+    <div class="testimonials-grid">
+      <article class="testimonial reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"Every staff member was kind, sweet, and professional. The whole experience was welcoming and stress-free."</p>
+        <div class="testimonial-cred">— Yelp review · 5 stars</div>
+      </article>
+      <article class="testimonial reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"First time taking my two little Shih Tzus to Poochella's — they exceeded every expectation."</p>
+        <div class="testimonial-cred">— Google review · 5 stars</div>
+      </article>
+      <article class="testimonial reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"Picked up my 4½-lb Mia and wow — she was perfect. The staff are the best."</p>
+        <div class="testimonial-cred">— Yelp · Mia's mom · 5 stars</div>
+      </article>
+      <article class="testimonial reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"They did a wonderful job on my two cocker spaniels, Nikki and Lola!"</p>
+        <div class="testimonial-cred">— Facebook · 5 stars</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT BANNER -->
+<section class="visit-banner">
+  <img src="images/exterior-banner.jpg" alt="Shag-style illustration of the Miriam's Poochella salon exterior — a hot-pink butterfly-roof mid-century building with a vintage POOCHELLA neon sign, framed by pink palms" loading="lazy">
+</section>
+
+<!-- VISIT -->
+<section class="visit" id="visit">
+  <div class="visit-wrap">
+    <div>
+      <div class="section-eyebrow reveal" style="color:var(--mustard);">
+        <span class="starburst" style="width:12px;height:12px;color:var(--mustard);"></span>
+        The Visit
+      </div>
+      <h2 class="section-title reveal" style="color:var(--pink-3);">South Palm Canyon Drive.<br>By the back parking lot.</h2>
+      <p class="reveal" style="color:rgba(255,224,236,0.8); margin-top:12px; max-width: 48ch;">Conveniently located on South Palm Canyon Drive, just ½ mile after the merger of Highway 111 &amp; Palm Canyon Drive on the south end of Palm Springs. Free back-lot parking — pull right in.</p>
+      <div class="visit-cta-wrap">
+        <a href="tel:+17608326913" class="visit-cta">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call to book · 760-832-6913
+        </a>
+      </div>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr; gap:18px;">
+      <div class="visit-card reveal">
+        <div class="visit-card-label">Address</div>
+        <div class="visit-card-value">
+          1504 S. Palm Canyon Rd.<br>
+          Palm Springs, CA 92264<br>
+          <a href="https://www.google.com/maps/dir//miriam's+poochella/@33.7996144,-116.5411018,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x80db1b11b9f5506d:0xecbbb358706acd0!2m2!1d-116.5454589!2d33.8038329" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <div class="visit-card reveal">
+        <div class="visit-card-label">Hours</div>
+        <div class="visit-card-value">
+          Monday — Friday<br>
+          8:00 AM — 4:00 PM<br>
+          <span style="opacity:0.65;">Saturday &amp; Sunday closed</span>
+        </div>
+      </div>
+      <div class="visit-card reveal">
+        <div class="visit-card-label">Find us</div>
+        <div class="visit-card-value">
+          <a href="https://www.instagram.com/miriamspoochella_ps/" target="_blank" rel="noopener">Instagram @miriamspoochella_ps</a><br>
+          <a href="https://www.facebook.com/Miriams-Poochella-Grooming-492684454253846" target="_blank" rel="noopener">Facebook · Miriam's Poochella</a><br>
+          <a href="https://www.miriamspoochella.com" target="_blank" rel="noopener">miriamspoochella.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Banana Bytes credit -->
+<div style="text-align:center; padding:1.5rem 1rem; font-size:0.7rem; letter-spacing:0.05em; opacity:0.55; background:var(--plum); color:var(--pink-3); border-top: 1px solid rgba(255,224,236,0.1);">
+  <a href="https://instagram.com/BananaCares" target="_blank" rel="noopener" style="text-decoration:none; color:inherit;">
+    Mockup created by Banana Bytes
+  </a>
+</div>
+
+<script>
+  // Nav scroll state
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 12);
+  }, { passive: true });
+
+  // Reveal on scroll
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+  }
+</script>
+
+</body>
+</html>
