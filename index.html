@@ -34,6 +34,9 @@
 <link rel="apple-touch-icon" sizes="512x512" href="images/favicon-512.png">
 <link rel="canonical" href="https://banana-daddy.github.io/miriams-poochella-PROMAX/">
 
+<!-- Preload hero image for faster LCP -->
+<link rel="preload" as="image" href="images/hero.jpg" fetchpriority="high">
+
 <!-- LocalBusiness structured data — surfaces in Google Maps "near me", rich snippets -->
 <script type="application/ld+json">
 {
@@ -322,8 +325,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 .awards-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px 22px;
 }
 .award-stat {
   border-top: 2px solid rgba(255,224,236,0.18);
@@ -961,7 +964,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
         <div class="service-img"><img src="images/service-hydrobath.jpg" alt="Shag-style illustration of a French Bulldog in a kidney-shaped grooming tub with pink bubbles and a chrome shower wand" loading="lazy"></div>
         <div class="service-body">
           <div class="service-num">— 001</div>
-          <div class="service-name">Hydro Bath</div>
+          <h3 class="service-name">Hydro Bath</h3>
           <p class="service-desc">Our Hydro Surge system uses InjectAir technology to combine fresh water, shampoo, and oxygen — penetrating the coat down to the skin. Up to 70% less bathing time. Zero hand scrubbing.</p>
         </div>
       </article>
@@ -970,7 +973,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
         <div class="service-img"><img src="images/service-facial.jpg" alt="Shag-style illustration of a Pomeranian relaxing with a blueberry facial mask on a hot-pink chaise" loading="lazy"></div>
         <div class="service-body">
           <div class="service-num">— 002</div>
-          <div class="service-name">Blueberry Facial</div>
+          <h3 class="service-name">Blueberry Facial</h3>
           <p class="service-desc">A tear-less, lick-safe face wash + color brightener — fresh blueberries, avocado, coconut oil, and aloe. Particularly nice for facial folds, tear-staining, and sensitive eyes.</p>
         </div>
       </article>
@@ -979,7 +982,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
         <div class="service-img"><img src="images/service-fullgroom.jpg" alt="Shag-style illustration of a Shih Tzu on a chrome grooming table with scissors mid-snip" loading="lazy"></div>
         <div class="service-body">
           <div class="service-num">— 003</div>
-          <div class="service-name">Bath &amp; Full Groom</div>
+          <h3 class="service-name">Bath &amp; Full Groom</h3>
           <p class="service-desc">The full Poochella treatment. Hydro bath, blow-dry, breed-appropriate cut, sanitary trim, nails, ears, finished with a tiny pink ribbon (or whatever your dog can pull off). Show-grade.</p>
         </div>
       </article>
