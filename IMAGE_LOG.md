@@ -1,5 +1,40 @@
 # Image Generation Log — Miriam's Poochella PRO-MAX
 
+## Refit pass (2026-05-15) — added entry #9 and compression notes
+
+All 8 in-use illustrations resized to display dimensions and re-encoded at JPEG quality 82. Body image weight **18.92 MB → 2.47 MB**. All originals backed up to `/tmp/poochella-backup/`.
+
+- Hero 2752×1536 → 1600 wide (276 KB)
+- Miriam portrait 1856×2304 → 1000 wide (255 KB)
+- Hydrobath 2048×1680 → cropped to 1680 square → 1000 (221 KB)
+- Fullgroom 2048×2048 → 1000 (184 KB)
+- VIP banner 3168×1344 → 1800 wide (258 KB)
+- Exterior banner 3168×1344 → 1800 wide (253 KB)
+- Pattern 2048×2048 → 800 (229 KB)
+- Facial (v2) 2048×2048 → 1000 (198 KB) — see #9 below
+
+OG image (1200×630, 176 KB) regenerated from the new compressed hero.
+
+---
+
+### #9 — service-facial.jpg (Nano Banana Pro 2K — REFIT regen, replaces v1)
+![service-facial-v2](images/service-facial-v2.jpg)
+- **Timestamp**: 2026-05-15 12:09
+- **Tier**: 2 | **API**: Gemini Nano Banana Pro 2K | **Cost**: $0.134
+- **Exec Time**: 33s
+- **Reason for regen**: v1 rendered the "blueberry on eye" concept ambiguously — one eye open winking, one closed with a starburst-decal-looking thing instead of a clear blueberry. Audit pass flagged it. v2 prompt emphasized "BOTH EYES FULLY CLOSED" and "two round whole fresh blueberries clearly visible as cucumber-spa-style eye decorations".
+- **Aspect ratio**: 1:1
+- **Claude Review**: Use Case 10/10 | Prompt Accuracy 10/10 — both eyes closed in a serene smile, two clear round blueberries on the eyelids, blue facial mask wrapped around the face, sun-mustard atomic starburst, mustard fan palm peeking in.
+- **Status**: ✓ Used (replaced v1)
+- **Attempts**: 1/2
+- **v1**: archived to `service-facial-v1-rejected.jpg` (no-delete rule)
+
+---
+
+## Refit cost: $0.134 — running total $1.65 + $0.134 = **$1.78**
+
+
+
 All 8 illustrations generated 2026-05-15. Style: Shag (Josh Agle) flat-vector mid-century atomic Palm Springs, pink-forward. Strict 6-color palette: `#FF4D8C` cabana pink, `#FBB6CE` bubblegum, `#FFE0EC` powder pink, `#5BA3A3` pool teal, `#E8B946` sun mustard, `#3D1830` plum ink.
 
 Pre-build approval: Zack signed off on all 14 (PRO-MAX + FRONTEND-FX) via [click-to-tag selection page](https://banana-daddy.github.io/miriams-poochella-select/) — all marked USE.

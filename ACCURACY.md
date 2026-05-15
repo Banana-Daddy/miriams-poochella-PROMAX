@@ -1,5 +1,16 @@
 # Accuracy Review — Miriam's Poochella PRO-MAX
 
+## Refit pass (2026-05-15) — accuracy items resolved
+
+- ✅ **★4.9 stat** → corrected to **★4.5 across 77+ reviews** (matches thedailygroomer.com source).
+- ✅ **Invented Miriam quote** ("I make sure every pet leaves happier…") → replaced with a brand-statement blockquote that is no longer attributed as her direct words: "Every pet a VIP. Every cut breed-appropriate. Every visit on the dog's schedule, never the kennel's." Reads as a brand promise / house ethos, not a direct quote from her.
+- ✅ **JSON-LD `aggregateRating`** uses verified `4.5 / 77` (not the previously displayed 4.9).
+- ⚠️ **Testimonials** still paraphrased from public reviews — needs Miriam's sign-off (no change from initial delivery).
+- ⚠️ **Brand-voice copy** ("From Zurich. To your dog's hair.", "Spa-day energy. Show-ring results.", "By appointment. Never in a kennel.", "Coachella Weekend · ask about festival bows") all still written by me — needs sign-off, no change from initial delivery.
+
+---
+
+
 ## Verified (from miriamspoochella.com + thedailygroomer.com + public reviews)
 
 - **Address**: 1504 S. Palm Canyon Rd., Palm Springs, CA 92264 ✓ (from homepage)

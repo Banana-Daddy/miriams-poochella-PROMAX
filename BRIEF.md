@@ -1,5 +1,27 @@
 # Miriam's Poochella — PRO-MAX (Vintage Atomic Poster)
 
+## Refit Log
+
+**2026-05-15 (post-delivery audit pass)** — Fixed everything Zack flagged in the audit:
+
+- **BROKEN #1**: Award stat corrected ★4.9 → **★4.5** (77+ reviews) to match thedailygroomer.com aggregate.
+- **BROKEN #2**: Real brand logo now displayed in the nav (cropped dog face) and footer (full wordmark). Was only used as favicon before.
+- **BROKEN #3**: Hero "Miriam's" italic script contrast fixed — `#5BA3A3` (2.37:1 — failed WCAG) → `#1F4E5F` deep teal (**7.40:1** — passes WCAG AAA).
+- **BROKEN #4**: The fabricated Miriam first-person quote replaced with a brand-statement blockquote — no longer attributed as her direct words. ACCURACY.md updated.
+- **BROKEN #5**: Added `scroll-padding-top: 96px` to `<html>` so anchor jumps don't hide content under the sticky nav.
+- **STALE #6 (compression)**: All 8 illustrations resized to display dimensions + re-encoded at JPEG q82. **Body image weight 18.92 MB → 2.47 MB (~87% reduction).** All originals backed up to `/tmp/poochella-backup/` and the v1 facial archived as `service-facial-v1-rejected.jpg`.
+- **STALE #7**: Hero `min-height: 100vh` softened — only applies on viewports ≥1024px (now `min-height: 88vh`). Empty padding band below the hero panel removed.
+- **STALE #8**: "House Rule" pattern divider overlay opacity 0.78 → 0.92 so the body copy reads cleanly against the pattern.
+- **STALE #9 (facial regen)**: Re-generated the Blueberry Facial illustration via NB Pro with a sharper prompt that emphasized "both eyes fully closed" and "two round whole blueberries clearly visible as cucumber-spa-style eye decorations". v2 lands the concept much better. v1 archived. Cost: $0.134.
+- **STALE #10**: Hero title clamp + word-break tightened so super-narrow viewports (<320 px) don't clip the "POOCHELLA" letters.
+- **POLISH**: Added `LocalBusiness` JSON-LD structured data (with verified 4.5★/77-reviews aggregate rating, awards, hours, geo). OpenStreetMap embed in the Visit section (Google's `output=embed` is deprecated; OSM works without an API key). Social icons (Instagram + Facebook SVG) in the Find us card. Skip-to-content link for keyboard users. Floating "Back to top" button shown after 600 px scroll. UTM parameters added to all outbound links (`?utm_source=poochella-site&utm_medium=visit-card` or `social-icon`) for call/click attribution. "Coachella Weekend · ask about festival bows" seasonal chip in the gallery section header.
+- **OG image refreshed** from the new compressed hero (still 1200×630, ~176 KB).
+
+**Refit cost**: $0.134 (single NB Pro regen). Total build cost now $1.65 + $0.134 = **$1.78** — still under the $2.00 expected ceiling.
+
+---
+
+
 ## Brand Synopsis
 
 Miriam's Poochella is an award-winning luxury dog grooming salon in Palm Springs, CA, owned by **Miriam Lenz** — originally from **Zurich, Switzerland**, formally trained in **fashion and interior design** before transitioning into grooming. **14 years grooming**, opened her own salon on South Palm Canyon Drive in **2016**, **6 employees**, by-appointment-only (no kennel waits). **6-time titled "Best Groomer in the Coachella Valley"**, **3 professional grooming awards**, 4.5★ across ~90+ reviews.
